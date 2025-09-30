@@ -1,5 +1,5 @@
-# E-commerce-Orders-Customer-Insights-Analysis
-📦 Target Orders — SQL Analytics (Case-Study)
+# E-commerce-Orders-Customer-Insights-Analysis (Case-Study)
+📦 Target Orders — SQL Analytics 
 We explore 100,000+ Target orders from Brazil across orders, payments, freight, delivery performance, product attributes, and customer reviews to uncover operational insights. The project ships with production-ready PostgreSQL queries, data quality checks, and a step-by-step guide to answer 20 practical business questions.
 
 # Problem Statement
