@@ -600,3 +600,38 @@ Q16/Q17: Payment types/terms inform checkout UX and risk models.
 Q18: Winning categories guide assortment, inventory safety stock, and merchandising.
 Q19: Low repeat rate → focus on post-purchase emails, CX fixes, and loyalty programs.
 Q20: Top cities → micro-fulfillment or regional promos.
+
+## 🔎 Analysis & Insights
+
+# Demand & Growth
+Orders grew steadily year over year with seasonal spikes (end-of-year).
+Peak daypart is Night → marketing and staffing should match when customers actually shop.
+
+# Geography (State/City)
+A handful of states & cities drive the majority of demand.
+Some states show high revenue but also high freight, signaling an opportunity to renegotiate carrier rates or optimize routing.
+
+# Delivery Performance
+Average delivery time = X days, but variance is high across states.
+Some states consistently deliver earlier than estimated (ETA too conservative), while others are late → adjust SLA and rebalance carriers.
+
+# Payments
+Credit card dominates, but installments are widely used.
+Installment usage trends upward month-to-month → impacts risk and cashflow forecasting.
+
+# Product Mix
+Top 10 categories contribute the bulk of revenue.
+Long-tail categories contribute marginally → candidate for pruning, bundling, or targeted SEO/ads.
+
+# Customer Experience
+Repeat purchase rate = ~R%, with loyal customers driving a disproportionate share of GMV.
+Indicates strong upside from loyalty programs and post-purchase engagement.
+
+## 🎯 Outcome
+
+A SQL-first analytics pack for Target Brazil’s 100k+ e-commerce orders that is:
+Reliable: Referential integrity enforced via foreign keys & indexes → joins are safe, results reproducible.
+Fast: Runs in minutes on laptop-class Postgres (no big cluster needed).
+Reusable: Common CTEs (order_payment, order_state, order_items_enriched) that analysts can extend for new questions.
+Decision-ready: Outputs go straight into slides or docs—no munging required.
+This means ops, product, and finance teams can spot trends, quantify delivery gaps, and prioritize fixes without waiting on ad-hoc scripts.
